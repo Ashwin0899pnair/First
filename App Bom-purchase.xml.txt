@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Purchase">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="377dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:text="Materials Required"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bolt"
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:srcCompat="@drawable/bolts" />
+
+    <TextView
+        android:id="@+id/bolt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Bolts" android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/nut"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading">
+
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="downBtnClicked1"
+            android:text="Down"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="upBtnClicked1"
+            android:text="Up"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/nut"
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bolt"
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@drawable/hexnut" />
+
+
+    <TextView
+        android:id="@+id/nuts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Nuts" android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/nut"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/nut"
+        app:layout_constraintTop_toBottomOf="@+id/nuts">
+
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="downBtnClicked2"
+            android:text="Down"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="101dp"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="upBtnClicked2"
+            android:text="Up"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/washer"
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nut"
+        app:layout_constraintVertical_bias="0.062"
+        app:srcCompat="@drawable/washer" />
+
+
+    <TextView
+        android:id="@+id/Washers"
+        android:layout_width="77dp"
+        android:layout_height="19dp"
+        android:text="Washers"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="231dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/nut"
+        app:layout_constraintTop_toBottomOf="@+id/Washers">
+
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="downBtnClicked3"
+            android:text="Down"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="101dp"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="upBtnClicked3"
+            android:text="Up"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="14dp"
+        android:layout_height="714dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="396dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
